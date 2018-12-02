@@ -17,6 +17,7 @@ public class Oauth2Util {
         if (request == null) {
             return null;
         }
+        //
         //取出头信息
         String authorization = request.getHeader("Authorization");
         if (StringUtils.isEmpty(authorization) || authorization.indexOf("Bearer") < 0) {
